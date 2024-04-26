@@ -10,4 +10,5 @@ driver = webdriver.Chrome(options=options)
 
 driver.get('https://www.google.com')
 
-print(driver.title)
+with open('teste.txt', "w") as file:
+    file.write(driver.title)
